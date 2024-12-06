@@ -1,0 +1,99 @@
+/* ExpenseManager.css */
+
+/* Expense Manager Container */
+.expense-manager-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Title */
+  .expense-manager-title {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Input Fields */
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .input-field:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  /* Buttons */
+  .add-expense-btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-expense-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .add-expense-btn:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  /* Expense List */
+  .expenses-list {
+    margin-top: 20px;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .expenses-list li {
+    padding: 12px;
+    background-color: #f8f9fa;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .expenses-list li:last-child {
+    border-bottom: none;
+  }
+  
+  .expenses-list span {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .expenses-list button {
+    background-color: #dc3545;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .expenses-list button:hover {
+    background-color: #c82333;
+  }
+  
+  .expenses-list button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  

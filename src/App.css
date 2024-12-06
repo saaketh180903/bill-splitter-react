@@ -1,38 +1,155 @@
-.App {
+/* App.css */
+
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* App Container */
+div {
+  padding: 20px;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #4caf50;
+  padding: 1rem;
+  color: white;
   text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 5px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.navbar a {
+  text-decoration: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Group Manager */
+.group-manager {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.group-manager h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.group-manager ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.group-manager li {
+  padding: 8px 0;
+  font-size: 1.2rem;
+}
+
+.group-manager button {
+  padding: 10px;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.group-manager button:hover {
+  background-color: #45a049;
+}
+
+/* Expense Manager */
+.expense-manager {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.expense-manager h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.expense-manager .expense-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.expense-manager .expense-item {
+  padding: 10px;
+  background-color: #fafafa;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.expense-manager .expense-item span {
+  font-size: 1.2rem;
+  margin-right: 10px;
+}
+
+.expense-manager .expense-item .amount {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Form Styling */
+input, select {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+input[type="number"] {
+  width: auto;
+}
+
+/* Button Styling */
+button {
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    font-size: 1.2rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  .group-manager, .expense-manager {
+    padding: 15px;
   }
 }

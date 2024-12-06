@@ -1,0 +1,81 @@
+/* GroupManager.css */
+
+/* Group Manager Container */
+.group-manager-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Title */
+  .group-manager-title {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Group List */
+  .group-list {
+    margin-top: 20px;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .group-list li {
+    padding: 12px;
+    background-color: #f8f9fa;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .group-list li:last-child {
+    border-bottom: none;
+  }
+  
+  .group-list span {
+    font-size: 1.1rem;
+    color: #444;
+  }
+  
+  /* Balance Display */
+  .balances-container {
+    margin-top: 20px;
+  }
+  
+  .balances-container p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .balances-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .balances-list li {
+    padding: 8px;
+    background-color: #e9ecef;
+    border-radius: 6px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .balances-list li:last-child {
+    border-bottom: none;
+  }
+  
+  .balances-list span {
+    font-size: 1rem;
+    color: #333;
+  }
+  
